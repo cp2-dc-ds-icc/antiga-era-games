@@ -1,0 +1,32 @@
+#menu1,h1 {
+    background-color: #000000;
+    margin-top:0px;
+    padding: 0px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    border: 0px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: azure;
+
+ }
+ #cadastro{
+text-align: center;
+    padding: 10px;
+margin: 0px;
+background-color: azure;
+ }
+
+ #senha1{
+    padding: auto;
+ }
+ 
+ #enviar{
+    color: beige;
+    background-color: black;
+    height: 30px;
+ }

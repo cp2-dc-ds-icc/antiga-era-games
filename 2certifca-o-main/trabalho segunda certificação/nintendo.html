@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/vetores-premium/botao-de-dispositivo-de-arcade-de-console-de-jogos-retro_165162-532.jpg?semt=ais_hybrid">
+    <link rel="stylesheet" href="nintendo.css">
+    <title>Aba Nintendo</title>
+</head>
+<body>
+    <div id="menu1">
+        <h1>Antiga era games</h1>
+    </div>
+    <div id="cadastro" >
+        <P id="ola"></P>
+        <button id="btn_cadastro" onclick="cadastro()">Cadastro</button>
+        <button id="btn_sair" onclick="sair()" style="display: none;">Sair</button>
+    </div>
+<div class="row">
+    <div class="coluna">
+        <button id = "sega" onclick="sega()">Sega</button>
+        <button id = "Playstation" onclick="PlayStation()">Playstation</button>
+        <button id = "Menu" onclick="menuinicial()">Menu Inicial</button>
+    </div>    
+    <div class="coluna texto-centro">
+        <div class="row">
+            
+    <div id="produtos">
+        
+        <img src="data:image/jpeg;base64,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" height= "350px" width="350px">
+        <div style="height: 150px;" width="100px">
+            <h2>Console super Nintendo <br>+ Super Mario World</h2>
+            <div style="height:50px ;">
+            <h2>R$580,90</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <h2 style="color: red;">Nintendo</h2>
+    <div id="produtos">
+        <img src="https://m.media-amazon.com/images/I/61hw4Zuun-L.jpg" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Super Nitendo<br> Joystick</h2>
+            <div style=" height:50px">
+            <h2>R$20,98</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <div id="produtos">
+    </div>
+    
+</div>
+<div class="row">
+
+    <div id="produtos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHvPn1V1XVJEFwgDpomP-hGLlCbNper9cHuQ&s" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Gameboy Advance </h2>
+            <div style=" height:50px">
+            <h2>R$540,38</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <div id="produtos">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d9/Capa_Mega_Man_X.png" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Megaman X</h2>
+            <div style=" height:50px">
+            <h2>R$70,54</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+</div>
+</div>
+
+<script>
+    let logado = localStorage.getItem("logado");
+    let nomelogado = localStorage.getItem("nomelogado")
+    if (logado){
+        document.getElementById("btn_cadastro").style.display ="none";
+        document.getElementById("btn_sair").style.display ="block";
+        document.getElementById("ola").innerHTML ="ola " + nomelogado;
+    }
+    function cadastro() {
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/cadastro.html")
+    }
+    function sair() {
+        localStorage.removeItem("logado");
+        localStorage.removeItem("nomelogado");
+        location.reload();
+    }    
+</script>
+<script>
+    function sega(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/sega.html")
+    }
+    function PlayStation(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/Playstation.html")
+    }
+    function menuinicial(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/trabalho2certificacao.html")
+
+    }
+</script>
+
+</body>
+</html>
