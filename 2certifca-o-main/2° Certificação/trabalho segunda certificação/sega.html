@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/vetores-premium/botao-de-dispositivo-de-arcade-de-console-de-jogos-retro_165162-532.jpg?semt=ais_hybrid">
+    <link rel="stylesheet" href="sega.css">
+    <title>Aba Sega</title>
+</head>
+<body>
+    <div id="menu1">
+        <h1>Antiga era games</h1>
+    </div>
+    <div id="cadastro" >
+        <P id="ola"></P>
+        <button id="btn_cadastro" onclick="cadastro()">Cadastro</button>
+        <button id="btn_sair" onclick="sair()" style="display: none;">Sair</button>
+    </div>
+<div class="row">
+    <div class="coluna">
+        <button id = "Nitendo" onclick="nintendo()">Nintendo</button>
+        <button id = "Playstation" onclick="PlayStation()">Playstation</button>
+        <button id = "Menu" onclick="menuinicial()">Menu Inicial</button>
+    </div>    
+    <div class="coluna texto-centro">
+        <table>
+        <td>
+            <div class="row">
+            
+    <div id="produtos">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBNs5-Kwol6ghvndW937SMFy8PX0eImvUEg&s" height= "350px" width="350px">
+        <div style="height: 150px;" width="100px">
+            <h2>Console Mega Drive</h2>
+            <div style="height:50px ;">
+            <h2>R$600,20</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <h2 style="color: blue ;">Sega</h2>
+    <div id="produtos">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_906771-MLB54869022550_042023-O.webp" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Controle Para Mega Drive<br> Com Função Turbo</h2> 
+           <div style=" height:50px">
+            <h2>R$40,73</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <div id="produtos">
+    </div>
+    
+</div>
+<div class="row">
+
+    <div id="produtos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDk_iV-JW7FvMOc1tpdszpIdj3HTTLyoZIQ&s" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Console Dreamcast</h2>
+            <div style=" height:50px">
+            <h2>R$890,54</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+    </div>
+    <div id="produtos">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_725769-MLB50434795250_062022-O.webp" height= "350px" width="350px">
+        <div style="height: 150px;">
+            <h2>Sonic 2</h2>
+            <div style=" height:50px">
+            <h2>R$70,39</h2>
+        </div>
+        </div>
+        <button id="comprar">comprar</button>
+</div>
+</div>
+</td>
+</table>
+<script>
+    let logado = localStorage.getItem("logado");
+    let nomelogado = localStorage.getItem("nomelogado")
+    if (logado){
+        document.getElementById("btn_cadastro").style.display ="none";
+        document.getElementById("btn_sair").style.display ="block";
+        document.getElementById("ola").innerHTML ="Olá, " + nomelogado;
+    }
+    function cadastro() {
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/cadastro.html")
+    }
+    function sair() {
+        localStorage.removeItem("logado");
+        localStorage.removeItem("nomelogado");
+        location.reload();
+    }    
+</script>
+<script>
+    function nintendo(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/nintendo.html")
+        }
+    function PlayStation(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/Playstation.html")
+
+    }
+    function menuinicial(){
+        window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/trabalho2certificacao.html")
+
+    }
+</script>
+
+</body>
+</html>

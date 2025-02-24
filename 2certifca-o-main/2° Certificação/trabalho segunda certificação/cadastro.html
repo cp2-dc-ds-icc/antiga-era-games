@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/vetores-premium/botao-de-dispositivo-de-arcade-de-console-de-jogos-retro_165162-532.jpg?semt=ais_hybrid">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div id="menu1">
+        <h1>Antiga era games</h1>
+    </div>
+<div id="cadastro">
+    <h2>Cadastro de usuário</h2>
+    <form id="formulário">
+        <label for="nome" value="nome">Insira seu nome:</label>
+        <br>
+        <input type="text" value="nome" name="nome" id="nome"><br>
+        <br><label for="senha" id="senha1">Insira uma senha:</label>
+        <br>
+        <input type="password" id="senha" name="senha">
+        <br>
+        <br>
+        <label for="sexo" id="sexo1">Insira o seu sexo:</label>
+        <br>
+        <input type= "text" id="sexo" name="sexo">
+        <br>
+        <br>
+        <button type="submit" id="enviar">Enviar cadastro</button>
+    </form>
+    <script>
+        const formulario = document.getElementById("formulário");
+        formulario.addEventListener("submit", async (e)=> {
+            e.preventDefault()
+            let senha = document.getElementById('senha').value;
+            let nome = document.getElementById('nome').value;
+            let sexo = document.getElementById('sexo').value;
+            if (senha == ""){
+                window.alert('senha vazia!');
+                return false;
+            }
+            let nomeregex = /^[A-Za-zÀ-ÿ\s]+$/;
+            if (!nomeregex.test(nome)) {
+                window.alert('Insira apenas letras no seu nome!');
+                return false;
+            }
+            if (sexo == ""){
+                window.alert("selecione seu sexo!");    
+                return false;
+            }
+            localStorage.setItem("logado", "sim");
+            localStorage.setItem("nomelogado",nome);
+            window.location.replace("file:///C:/Users/labcaxias/Documents/AD202%20KAYKE%20E%20THAMY/2%C2%B0%20Certifica%C3%A7%C3%A3o/2%C2%B0%20Certifica%C3%A7%C3%A3o/trabalho%20segunda%20certifica%C3%A7%C3%A3o/trabalho2certificacao.html");
+            return true;
+        })
+    </script>
+</div>       
+</body>
+</html>
